@@ -242,6 +242,25 @@ test('actual session and first audio lifecycle events are emitted once, without 
   assert.deepEqual(events, ['live-session-started', 'live-first-audio']);
 });
 
+test('audio diagnostics count received and forwarded frames without retaining audio or identities', async t => {
+  const { EventEmitter } = await import('node:events');
+  const lines = []; t.mock.method(console, 'log', line => lines.push(JSON.parse(line)));
+  class Provider {
+    handleWebSocket(ws) { ws.on('message', raw => { const event = JSON.parse(raw); if (event.event === 'media') this.modelSend(CALL, { type: 'session.input_audio.append', audio: event.media.payload }); }); }
+    modelSend() {}
+    async dispatchModelEvent() {}
+  }
+  class Config {}
+  const Configured = createProactivePhoneConfig(Provider, Config), provider = new Configured().createProvider({}, {}), ws = new EventEmitter();
+  provider.handleWebSocket(ws);
+  ws.emit('message', JSON.stringify({ event: 'start', start: { callSid: CALL } }));
+  for (const byte of [255, 0]) ws.emit('message', JSON.stringify({ event: 'media', media: { payload: Buffer.alloc(160, byte).toString('base64') } }));
+  await provider.dispatchModelEvent(CALL, { metadata: {} }, { type: 'session.input_transcript.delta' });
+  ws.emit('close');
+  assert.equal(lines.length, 1); assert.equal(lines[0].receivedFrames, 2); assert.equal(lines[0].forwardAttempts, 2); assert.equal(lines[0].nonquietFrames, 1); assert.equal(lines[0].userTranscriptDeltas, 1);
+  assert.equal(JSON.stringify(lines).includes(CALL), false); assert.equal('audio' in lines[0], false); assert.equal(provider.phoneAudioStats.size, 0);
+});
+
 test('HTTP GET serves only whitelisted generic prompts and a valid listening chime', async () => {
   const s = setup();
   const directory = join(s.root, 'public', 'phone-prompts'); mkdirSync(directory, { recursive: true });

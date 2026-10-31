@@ -39,15 +39,15 @@ The deployed [one-page judge guide](https://commonground-ac9dc2.style.dev/judge.
 
 The real 334-second English inbound and 148-second shared calls verified exact brief revision/authorization and board visibility. Current actual-call private V3/shared V1 proposals remain pending human review. Earlier isolated hosted proof separately verifies approval/reset behavior. The old 181-second maximum-duration result belongs to an earlier three-minute cap; current phone cap is eight minutes.
 
-Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. A local correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is not yet deployed or carrier-retested, and the complete outbound conversation is not accepted as working.
+Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. The correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is deployed at 3:41 p.m. and awaits actual reply-quality verification; the complete outbound conversation is not accepted as working.
 
 Automatic matching-agenda calls are capped at one per day. Manual labeled tests allow at most three per hour, only after the prior test is terminal and the user gives a fresh explicit confirmation. Active or unknown calls are not retried automatically. Existing-document tests remain labeled TEST; they are not new publications.
 
 A saved private matching agenda watch and separate verified-own-number call opt-in are required for automatic calls. Saving or baseline ingestion does not dial. The on-page browser audio preview technically played at 3:30 p.m. (10.45 seconds, readyState 4, paused false, no error); that is not carrier-call evidence. Browser-push delivery remains unverified. Caller turn-taking criticism and broad language quality are not erased by isolated tests.
 
-The selected [142-word real-story pitch](artifacts/pitch-real-story.txt) begins with the reported 2024 Chinatown incident; its selected voice is generated at 54.20 seconds WAV / 54.23 seconds MP3, with about 5.8 seconds under 60. The prior 139-word push-first pitch and its [53.95-second WAV](artifacts/pitch-push-first-master.wav) / [about 54-second MP3](artifacts/pitch-push-first-master.mp3), plus the older 53.1-second track, remain preserved.
+The selected [142-word real-story pitch](docs/pitch-script.txt) begins with the reported 2024 Chinatown incident; its selected voice is generated at 54.20 seconds WAV / 54.23 seconds MP3, with about 5.8 seconds under 60. The prior 139-word push-first pitch and its [53.95-second WAV](artifacts/pitch-push-first-master.wav) / [about 54-second MP3](artifacts/pitch-push-first-master.mp3), plus the older 53.1-second track, remain preserved.
 
-The selected updated 117.766667-second video has passed media decode/visual QA. Its opening shows controls and an earlier private brief’s verified receipts, not an outbound conversation; its body uses an earlier inbound call and later same-private-workspace UI. Hosted replacement verification and user manual unlisted upload/link are pending.
+The selected updated 117.766667-second video has passed media decode/visual QA. Its opening shows controls and an earlier private brief’s verified receipts, not an outbound conversation; its body uses an earlier inbound call and later same-private-workspace UI. Final hosted MP4 range 206 / 7,222,801 bytes and VTT 200 are verified; user manual unlisted upload/link remain pending.
 
 Public hosting and unlisted YouTube upload are authorized, but the user is uploading manually and must provide the watch link. The assistant does not sign in, upload, or submit the event entry. See [submission checklist](docs/submission.md). Specific user-approved OpenAI transcription yielded 686 words/43 segments after a PCM-format retry; the user recording was not copied to the VM.
 
@@ -98,7 +98,7 @@ The test suites use isolated storage, stubbed model/phone providers, and local H
 node tests/relay.integration.mjs
 ```
 
-Hosted validation is separate from isolated tests. Actual model/Relay, vector retrieval, actor restart, inbound brief authorization and outbound ringing/pairing are verified. The latest 106-second outbound retest heard the correct specific source greeting but captured zero caller transcript. A local reply-path correction has 38 isolated passes and awaits deployment/carrier retest. Browser push and final updated-video/upload checks remain open.
+Hosted validation is separate from isolated tests. Actual model/Relay, vector retrieval, actor restart, inbound brief authorization and outbound ringing/pairing are verified. The latest 106-second outbound retest heard the correct specific source greeting but captured zero caller transcript. A reply-path correction has 38 isolated passes, was deployed at 3:41 p.m., and awaits actual reply-quality verification. Browser push and final updated-video/upload checks remain open.
 
 Pitch and demo scripts are maintained in [docs/pitch.md](docs/pitch.md) and [docs/demo-video.md](docs/demo-video.md): **60-second pitch + two-minute video**. The native body is recorded/technically validated; the updated 117.77-second cut has passed media decode/visual QA; hosted replacement verification remains pending. Public hosting and manual unlisted upload are already authorized; the user provides the watch link and controls event submission.
 
@@ -110,6 +110,8 @@ Pitch and demo scripts are maintained in [docs/pitch.md](docs/pitch.md) and [doc
 - [Official Relaycast engine and SDK](https://github.com/AgentWorkforce/relaycast) and [Terse Durable Actors](https://docs.useterse.ai/quickstart).
 
 Public source: [roshkins/CommonGround](https://github.com/roshkins/CommonGround), anonymous read verified. The public snapshot excludes credentials, runtime data and user recordings/video/captions.
+
+[Hosted demonstration video](https://commonground-ac9dc2.style.dev/demo-final.mp4) (117.766667 seconds; user-authorized public hosting). Video, user audio and captions are intentionally excluded from GitHub.
 
 ## Public source snapshot
 

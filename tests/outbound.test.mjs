@@ -111,8 +111,8 @@ test('outbound generic notice reveals no private history and binds only its inte
     const own = await s.phone.pair(VISITOR, { participant: 'garage', spokenLanguage: 'en' });
     await s.request(`/phone/outbound-confirm?token=${token}`, { ...fields, Digits: '1' });
     const paired = await s.request(`/phone/pair-connect?outbound=${token}`, { ...fields, Digits: own.code }); assert.equal(paired.status, 200);
-    assert.ok(paired.body.includes(chunk(1).title)); assert.ok(paired.body.includes(chunk(1).meetingDate));
-    assert.ok(paired.body.includes('item C, page 3')); assert.ok(paired.body.includes('Connecting your advocate about this notification'));
+    assert.ok(paired.body.includes('Code accepted. Connecting your advocate.'));
+    assert.equal(paired.body.includes(chunk(1).title), false); // No long source playback before the microphone stream.
     const context = await s.phone.context(OUTBOUND);
     assert.equal(context.visitorId, VISITOR);
     assert.equal(context.triggeringAgenda.page, 3); assert.equal(context.triggeringAgenda.item, 'C');

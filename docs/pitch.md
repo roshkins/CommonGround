@@ -1,6 +1,6 @@
 # CommonGround pitch
 
-Updated October 31, 2026, 3:41 p.m. Pacific. Format: a 60-second pitch and a two-minute-budget demo. The **3 p.m. ready target has passed following late critical requests**; submission still closes at the reported **4 p.m. Pacific** deadline. Outbound ringing, pairing and a specific source greeting are verified, but the latest reply path failed; its local correction needs deployment and retest. The 117.77-second updated demo has passed media QA; hosted replacement verification and manual YouTube upload remain pending.
+Updated October 31, 2026, 3:41 p.m. Pacific. Format: a 60-second pitch and a two-minute-budget demo. The **3 p.m. ready target has passed following late critical requests**; submission still closes at the reported **4 p.m. Pacific** deadline. Outbound ringing, pairing and a specific source greeting are verified, but the latest reply path failed; its correction is deployed and needs actual reply-quality verification. The 117.77-second updated demo has passed media QA; hosted replacement verification and manual YouTube upload remain pending.
 
 ## Current real-story spoken pitch
 
@@ -16,7 +16,7 @@ Sharing a concern isn't approving a proposal. People approve the exact version; 
 
 CommonGround turns public information into a conversation that fits an owner's day. Agents propose. People approve.
 
-[Selected 142-word real-story script](../artifacts/pitch-real-story.txt). Selected voice is generated and timing-validated: [54.20-second WAV](../artifacts/pitch-real-story-master.wav) / [54.23-second MP3](../artifacts/pitch-real-story-master.mp3), leaving about 5.8 seconds under the minute. The prior [139-word push-first script](../artifacts/pitch-push-first-draft.txt) and its [53.95-second WAV](../artifacts/pitch-push-first-master.wav) / [54.0-second MP3](../artifacts/pitch-push-first-master.mp3) remain preserved; those recordings do not yet contain this real-story opening.
+[Selected 142-word real-story script](pitch-script.txt). Selected voice is generated and timing-validated: [54.20-second WAV](../artifacts/pitch-real-story-master.wav) / [54.23-second MP3](../artifacts/pitch-real-story-master.mp3), leaving about 5.8 seconds under the minute. The prior [139-word push-first script](../artifacts/pitch-push-first-draft.txt) and its [53.95-second WAV](../artifacts/pitch-push-first-master.wav) / [54.0-second MP3](../artifacts/pitch-push-first-master.mp3) remain preserved; those recordings do not yet contain this real-story opening.
 
 ## Exact judging criteria
 
@@ -25,7 +25,7 @@ Names and equal weights are from the judging dashboard screenshot supplied by th
 | Criterion | Weight | Evidence and honest boundary |
 | --- | --- | --- |
 | Use of Real-Time AI and Track Technology | 20% | Actual GPT Live calls, Terra reasoning, Terse state, Relay receipts and Supabase vectors. Prepared walkthrough playback is distinct from fresh live AI. |
-| Originality and Creativity | 20% | Personal advocates connect language access, public agenda context and exact sharing permission. Opt-in agenda-triggered outbound calling and the labeled own-number test have 38 isolated checks. Real tests verified ringing/pairing and a specific source greeting; the latest reply path failed and its local correction needs deployment/retest. |
+| Originality and Creativity | 20% | Personal advocates connect language access, public agenda context and exact sharing permission. Opt-in agenda-triggered outbound calling and the labeled own-number test have 38 isolated checks. Real tests verified ringing/pairing and a specific source greeting; the latest reply path failed and its correction is deployed and needs actual reply-quality verification. |
 | Execution and Demo | 20% | Real phone-to-web authorization, visible concerns, proposal generation, isolated version/reset tests and actual API metadata. Current real-call proposals remain pending human approval. |
 | User Experience and Design | 20% | Phone-first flow and a new six-step one-page judge guide, with exact consent before agent exchange. Caller criticism of turn-taking remains a quality gate. |
 | Potential and Impact | 20% | Civic participation and coordination are the intended impact. No merchant outcome study, savings claim or million-user load test has been performed. |
@@ -40,10 +40,10 @@ Names and equal weights are from the judging dashboard screenshot supplied by th
 | Terse / Relay / Supabase | Genuine actor restart persistence, actual Relay receipts, and past/upcoming vector retrieval with official item/page citations are verified | Architecture is not a scale/load-test result |
 | Live API flow | Actual phone wire, model, embedding and retrieval operations shown as safe current-process metadata | No concerns, queries, transcripts, call identifiers or simulated traffic |
 | One-page judge guide | Deployed [judge guide](https://commonground-ac9dc2.style.dev/judge.html); browser QA passed at 3:07 p.m.: exact five 20% criteria, live Winter Walk source, actual private concern, consent guard and simulated V1→V2 approval reset | Fictional outbound scene, owner consent and proposal decisions stay explicitly simulated. Prepared run contains four actual Terra responses and four isolated Relay receipts, not new calls on every replay |
-| Real opt-in agenda-triggered outbound calls | User confirmed ringing and fresh English-code pairing in a 171-second shared test | Later 106-second retest heard the specific source greeting but captured zero caller transcript. Reply-path correction is local, 38 checks pass; deployment/retest pending |
+| Real opt-in agenda-triggered outbound calls | User confirmed ringing and fresh English-code pairing in a 171-second shared test | Later 106-second retest heard the specific source greeting but captured zero caller transcript. Reply-path correction deployed at 3:41 p.m.; 38 checks pass, actual reply-quality retest pending |
 | Agenda inbox / push | Real private watch/inbox and receipt UI deployed; actual private brief showed two verified Relay receipts. Browser audio preview technically plays (10.45 s, ready state 4, no error) | Browser-push delivery and complete outbound reply quality remain unverified; browser audio is not call proof |
 | Recording transcription | Specific OpenAI transcription authorized by the user; PCM-format retry produced 686 words and 43 timestamped segments | User-provided recording was not copied to the VM |
-| Video | Native 97.77 s body is technically validated. Selected new 117.77 s cut passed media decode/visual QA | Hosted replacement verification and user manual unlisted upload/link still pending |
+| Video | Native 97.77 s body is technically validated. Selected new 117.77 s cut passed media decode/visual QA | Final hosted MP4 range 206 / 7,222,801 bytes and VTT 200 verified; user manual unlisted upload/link still pending |
 
 ## Stack and language boundaries
 
@@ -53,7 +53,7 @@ The written interface offers English and Traditional Chinese. The phone picker o
 
 The agents propose; people approve the current version. Fictional roles and visitor decisions never establish real-business consent. Use [submission checklist](submission.md) to close the remaining delivery gates before 4 p.m.
 
-Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. A local correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is not yet deployed or carrier-retested, and the complete outbound conversation is not accepted as working.
+Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. The correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is deployed at 3:41 p.m. and awaits actual reply-quality verification; the complete outbound conversation is not accepted as working.
 
 Current sharing feedback: the actual concerns panel says “Brief shared” only when the current exact authorized brief has matching verified Relay receipts for its recipient targets. Missing/partial current receipts are labeled; nothing is described as filed with government or as proposal approval.
 
