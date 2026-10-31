@@ -1,0 +1,13 @@
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { randomBytes } from 'node:crypto';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import webpush from 'web-push';
+const root = dirname(dirname(fileURLToPath(import.meta.url)));
+const path = join(root, 'data', 'runtime-secrets.json');
+mkdirSync(join(root, 'data'), { recursive: true });
+const existing = existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : {};
+const vapid = existing.vapidPrivateKey ? null : webpush.generateVAPIDKeys();
+const next = { ...existing, internalToken: existing.internalToken || randomBytes(32).toString('hex'), vapidPublicKey: existing.vapidPublicKey || vapid.publicKey, vapidPrivateKey: existing.vapidPrivateKey || vapid.privateKey };
+writeFileSync(path, JSON.stringify(next), { mode: 0o600 });
+console.log('Private internal authentication and browser-push signing keys are ready. Values were not printed.');

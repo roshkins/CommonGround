@@ -1,0 +1,30 @@
+{
+  "name": "common-ground",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "relay": "node scripts/relay-server.mjs",
+    "actors": "node scripts/actors-server.mjs",
+    "voice": "node scripts/voice-server.mjs",
+    "agenda:sync": "node scripts/agenda-worker.mjs --once",
+    "setup:secrets": "node scripts/setup-local-secrets.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "@relaycast/engine": "12.3.0",
+    "@relaycast/sdk": "12.3.0",
+    "freestyle": "0.2.21",
+    "pdf-parse": "1.1.1",
+    "terse-sdk": "0.14.9",
+    "twilio-agent-connect": "2.5.0",
+    "web-push": "3.6.7"
+  }
+}

@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/
+*.log
+coverage/
+dist/
+
+# Private production and media outputs
+artifacts/
+recordings/
+public/demo-final.mp4
+public/demo-final.vtt
+*.wav
+*.webm

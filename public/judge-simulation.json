@@ -1,0 +1,181 @@
+{
+  "simulation": true,
+  "generatedAt": "2026-10-31T21:50:14.059Z",
+  "source": {
+    "title": "SFMTA ISCOTT minutes — October 22, 2026 — Winter Walk",
+    "url": "https://www.sfmta.com/media/50353/download?inline#page=3",
+    "meetingDate": "2026-10-22",
+    "page": 3,
+    "item": "C",
+    "text": "The October 22, 2026 ISCOTT minutes list Winter Walk closures on Grant Avenue between Geary and Post and on Maiden Lane between Kearny and Stockton, including their intersection. Item C records December 4 at 6 a.m. through December 30 at 6 p.m., 2026, and an approval vote. These are source facts; the fictional pilot terms below are not official permit conditions.",
+    "excerpt": "The October 22, 2026 ISCOTT minutes list Winter Walk closures on Grant Avenue between Geary and Post and on Maiden Lane between Kearny and Stockton, including their intersection. Item C records December 4 at 6 a.m. through December 30 at 6 p.m., 2026, and an approval vote. These are source facts; the fictional pilot terms below are not official permit conditions."
+  },
+  "messages": [
+    {
+      "speaker": "Garage advocate",
+      "text": "Fictional simulation: Can we compromise while protecting legally available delivery access until 6 p.m.? I propose exploring an after-6 pilot with a step-free route and visible access to the tea shop. Recorded closures apply; organizer and city access review remains unresolved.",
+      "language": "en",
+      "generatedBy": "gpt-6.1-terra",
+      "at": "2026-10-31T21:50:07.514Z",
+      "receipt": {
+        "id": "242404798068002816",
+        "deliveryId": "del_242404798068002817",
+        "verified": true,
+        "acknowledged": true,
+        "transport": "relaycast",
+        "at": "2026-10-31T21:50:07.570Z"
+      }
+    },
+    {
+      "speaker": "Tea advocate",
+      "text": "Fictional simulation: Could we explore after-6 tea signage and evening foot-traffic activities, with a marked, unobstructed step-free route and legally available delivery access protected until 6? Recorded closures still apply; organizer and city access review remains unresolved.",
+      "language": "en",
+      "generatedBy": "gpt-6.1-terra",
+      "at": "2026-10-31T21:50:10.034Z",
+      "receipt": {
+        "id": "242404808633454592",
+        "deliveryId": "del_242404808633454593",
+        "verified": true,
+        "acknowledged": true,
+        "transport": "relaycast",
+        "at": "2026-10-31T21:50:10.086Z"
+      }
+    },
+    {
+      "speaker": "Garage advocate",
+      "text": "Fictional simulation: Let’s explore after-6 tea signage and foot-traffic activities alongside a marked step-free route. The garage still needs legally available delivery access until 6; closures apply, and organizer and city access review remains unresolved.",
+      "language": "en",
+      "generatedBy": "gpt-6.1-terra",
+      "at": "2026-10-31T21:50:11.996Z",
+      "receipt": {
+        "id": "242404816862679040",
+        "deliveryId": "del_242404816862679041",
+        "verified": true,
+        "acknowledged": true,
+        "transport": "relaycast",
+        "at": "2026-10-31T21:50:12.054Z"
+      }
+    },
+    {
+      "speaker": "Tea advocate",
+      "text": "Fictional draft; human approval pending.",
+      "language": "en",
+      "generatedBy": "gpt-6.1-terra",
+      "at": "2026-10-31T21:50:14.005Z",
+      "receipt": {
+        "id": "242404825280647168",
+        "deliveryId": "del_242404825280647169",
+        "verified": true,
+        "acknowledged": true,
+        "transport": "relaycast",
+        "at": "2026-10-31T21:50:14.059Z"
+      }
+    }
+  ],
+  "brief": "FICTIONAL DEMO: Harbor Lane Garage needs legally available delivery access protected until 6 p.m. and a clear step-free route. Saffron Kettle Tea wants discoverable evening foot traffic. Explore an after-6 pilot only if organizers and the city can approve the access plan; never assume an exemption from the recorded closure.",
+  "notice": "Prerecorded fictional simulation. Actual model generations and only marked verified Relay receipts are real. Outbound calls, business identities, owner actions and consent are simulated. No phone call was placed and no real visitor workspace was changed.",
+  "outbound": {
+    "mode": "simulated",
+    "language": "en",
+    "caller": "CommonGround demo advocate",
+    "recipient": "Fictional Harbor Lane Garage owner",
+    "actualCallsPlaced": 0
+  },
+  "proposal": {
+    "version": 1,
+    "title": "Illustrative after-6 access and evening-footfall pilot",
+    "terms": [
+      "Explore after-6 tea signage and activities.",
+      "Keep the step-free route unobstructed.",
+      "Protect legally available garage deliveries until 6.",
+      "Recorded closures apply."
+    ],
+    "tradeoffs": [
+      "Evening activities depend on maintaining access."
+    ],
+    "unresolved": [
+      "Can organizers and the city approve the access plan?",
+      "Every real owner must review and approve the current proposal version. No real approval has been collected."
+    ],
+    "approval": "simulated/pending",
+    "officialPermitTerms": false
+  },
+  "steps": [
+    "Cited public minutes identify a future closure.",
+    "A fictional relevance match triggers a simulated outbound call in the chosen language.",
+    "Four actual model turns explore the two fictional business needs.",
+    "Only verified isolated Relay deliveries are marked real.",
+    "The illustrative proposal remains pending human review; changing terms requires new review."
+  ],
+  "proof": {
+    "provider": "OpenAI Responses",
+    "model": "gpt-6.1-terra",
+    "openaiCalls": [
+      {
+        "speaker": "Garage advocate",
+        "responseId": "resp_02aaa063824bd778016ae6628d7ff487d086ec18092857f05b",
+        "at": "2026-10-31T21:50:07.513Z"
+      },
+      {
+        "speaker": "Tea advocate",
+        "responseId": "resp_0b10a4326cf76ccf016ae6628fc78c87d0a46a2a0c3cd61ec8",
+        "at": "2026-10-31T21:50:10.034Z"
+      },
+      {
+        "speaker": "Garage advocate",
+        "responseId": "resp_075c9c8110f1c87b016ae66292341487d09e60951d6c70533d",
+        "at": "2026-10-31T21:50:11.996Z"
+      },
+      {
+        "speaker": "Tea advocate",
+        "responseId": "resp_0cbcb0f9ebfc78c4016ae662942b2c87d0985a14b1239d2be8",
+        "at": "2026-10-31T21:50:14.005Z"
+      }
+    ],
+    "relay": {
+      "used": true,
+      "isolated": true,
+      "receipts": [
+        {
+          "id": "242404798068002816",
+          "deliveryId": "del_242404798068002817",
+          "verified": true,
+          "acknowledged": true,
+          "transport": "relaycast",
+          "at": "2026-10-31T21:50:07.570Z"
+        },
+        {
+          "id": "242404808633454592",
+          "deliveryId": "del_242404808633454593",
+          "verified": true,
+          "acknowledged": true,
+          "transport": "relaycast",
+          "at": "2026-10-31T21:50:10.086Z"
+        },
+        {
+          "id": "242404816862679040",
+          "deliveryId": "del_242404816862679041",
+          "verified": true,
+          "acknowledged": true,
+          "transport": "relaycast",
+          "at": "2026-10-31T21:50:12.054Z"
+        },
+        {
+          "id": "242404825280647168",
+          "deliveryId": "del_242404825280647169",
+          "verified": true,
+          "acknowledged": true,
+          "transport": "relaycast",
+          "at": "2026-10-31T21:50:14.059Z"
+        }
+      ],
+      "status": "actual-isolated-relay"
+    },
+    "elapsedMs": 8857,
+    "actualCallsPlaced": 0,
+    "realHumanApprovals": 0,
+    "visitorWorkspaceWrites": 0,
+    "usesPrivateOwnerData": false,
+    "playbackMakesNetworkCalls": false
+  }
+}
