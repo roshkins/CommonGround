@@ -14,6 +14,9 @@ const ROOT = dirname(fileURLToPath(import.meta.url));
 const ASSETS = { '/': ['index.html', 'text/html'], '/app.js': ['app.js', 'text/javascript'], '/features.js': ['features.js', 'text/javascript'], '/sw.js': ['sw.js', 'text/javascript'], '/style.css': ['style.css', 'text/css'], '/favicon.svg': ['favicon.svg', 'image/svg+xml'], '/service-flow.html': ['service-flow.html', 'text/html'], '/service-flow.js': ['service-flow.js', 'text/javascript'], '/service-flow.css': ['service-flow.css', 'text/css'], '/judge.html': ['judge.html', 'text/html'], '/judge.js': ['judge.js', 'text/javascript'], '/judge.css': ['judge.css', 'text/css'], '/judge-simulation.json': ['judge-simulation.json', 'application/json'], '/demo-final.mp4': ['demo-final.mp4', 'video/mp4'], '/demo-final.vtt': ['demo-final.vtt', 'text/vtt'] };
 
 ASSETS['/demo-outreach-en.mp3'] = ['demo-outreach-en.mp3', 'audio/mpeg'];
+ASSETS['/'] = ['judge.html', 'text/html'];
+ASSETS['/workspace.html'] = ['index.html', 'text/html'];
+ASSETS['/outbound-proof.json'] = ['outbound-proof.json', 'application/json'];
 
 export function createApp({ dbPath = join(ROOT, 'data', 'common-ground.sqlite'), config = () => readConfig(ROOT), services: suppliedServices } = {}) {
   const activity = createActivityTrace();

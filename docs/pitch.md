@@ -14,9 +14,9 @@ The owner reviews the exact words before sharing. Verified receipts confirm the 
 
 Sharing a concern isn't approving a proposal. People approve the exact version; change the terms, and approval resets.
 
-CommonGround turns public information into a conversation that fits an owner's day. Agents propose. People approve.
+Potential customers include city governments and small businesses. Agents propose. People approve.
 
-[Selected 142-word real-story script](pitch-script.txt). Selected voice is generated and timing-validated: [54.20-second WAV](../artifacts/pitch-real-story-master.wav) / [54.23-second MP3](../artifacts/pitch-real-story-master.mp3), leaving about 5.8 seconds under the minute. The prior [139-word push-first script](../artifacts/pitch-push-first-draft.txt) and its [53.95-second WAV](../artifacts/pitch-push-first-master.wav) / [54.0-second MP3](../artifacts/pitch-push-first-master.mp3) remain preserved; those recordings do not yet contain this real-story opening.
+[Selected 138-word final pitch](pitch-script.txt) now names city governments and small businesses as potential customers. Selected final voice is generated and validated: [56.40-second WAV](../artifacts/pitch-final-master.wav) / [56.45-second MP3](../artifacts/pitch-final-master.mp3), leaving about 3.5 seconds under one minute. The prior 142-word real-story voice remains preserved at 54.23 seconds. The prior [139-word push-first script](../artifacts/pitch-push-first-draft.txt) and its [53.95-second WAV](../artifacts/pitch-push-first-master.wav) / [54.0-second MP3](../artifacts/pitch-push-first-master.mp3) remain preserved; those recordings do not yet contain this real-story opening.
 
 ## Exact judging criteria
 
@@ -68,3 +68,5 @@ Automatic matching-agenda calls are capped at one per day. Manual labeled tests 
 - October 31, 3:41 p.m.: selected real-story voice passed under 60 seconds; updated 117.77-second video passed media QA; recorded the later 106-second outbound reply-path failure and local 38-check correction without promoting it to carrier success. Public source published and anonymously verified.
 
 - October 31, 3:46 p.m.: final real 84-second English outbound retest confirmed responsive and agenda-aware; no brief review/send in that retest, so spoken receipt remains implementation/test evidence. Hosted final 117.77-second media verified; manual YouTube URL pending.
+
+- October 31, 3:49 p.m.: promoted the guided flow to the primary homepage with prominent verified real outbound-test metadata; the fictional consent/proposal walkthrough stays secondary. Selected final 138-word pitch names potential government and small-business customers; no actual customer deployment/outcome is claimed. New proof-focused video opening is in production, distinct from the already validated prior 117.77-second cut.

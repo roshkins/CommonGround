@@ -3,7 +3,7 @@ const shortTitles = ['Need', 'Source', 'Call', 'Consent', 'Advocates', 'Decision
 const evidence = [
   [{ title: 'Participation on the owner’s schedule', text: 'A fictional business explains one concrete need and chooses what it wants to watch.', kind: 'Simulated owner · no real watch changed' }, { title: 'Clear user experience', text: 'One page, six steps, and a visible boundary between private concerns and shared briefs.', kind: 'Interface demonstration' }],
   [{ title: 'Inspectable grounding', text: 'Search an actual published agenda and retain the original URL, meeting date, item and page.', kind: 'Actual live retrieval when labeled' }, { title: 'No invented future decision', text: 'This example uses an existing published source as a baseline, not a newly published alert.', kind: 'Existing-source baseline' }],
-  [{ title: 'Outreach opportunity', text: 'Illustrates a future agenda-triggered outbound notification or call.', kind: 'OUTBOUND CALL SIMULATED' }, { title: 'Actual capability boundary', text: 'Paired inbound calls have been verified separately. No outbound call is placed by this walkthrough.', kind: 'Verified inbound ≠ simulated outbound' }],
+  [{ title: 'Outreach opportunity', text: 'Illustrates agenda-triggered outreach using fictional businesses. The actual completed test is documented above.', kind: 'OUTBOUND CALL SIMULATED' }, { title: 'Actual capability boundary', text: 'Inbound and outbound English calls have been verified separately. This walkthrough does not place a call.', kind: 'Actual call evidence above · this scene is simulated' }],
   [{ title: 'Conflicting perspectives', text: 'Two fictional AI advocates exchange constraints and counteroffers; their generated dialogue is prepared for replay.', kind: 'AI-generated scenario · simulated businesses' }, { title: 'Consequential coordination', text: 'Watch the delivery/access constraint affect the suggested compromise.', kind: 'Prepared scenario exchange' }],
   [{ title: 'Exact words and explicit consent', text: 'Read or edit the brief before the simulated owner authorizes it. Nothing is sent to the live workspace.', kind: 'SIMULATED OWNER CONSENT' }, { title: 'Human agency', text: 'A permission to share a brief is separate from approving a proposal.', kind: 'Permission boundary demonstrated' }],
   [{ title: 'Version-bound human decisions', text: 'Simulate approval, revise a material term, and see approval reset for the new version.', kind: 'LOCAL SIMULATION ONLY' }, { title: 'Execution evidence', text: 'Actual service operations remain visible below and are not invented by replay.', kind: 'Separate live metadata' }],
@@ -98,7 +98,7 @@ document.getElementById('real-pair').addEventListener('click', async () => {
   catch (error) { document.getElementById('real-pair-result').textContent = error.message; }
   finally { button.disabled = false; }
 });
-render(); void activity(); void actualConcerns(); void loadOutbound(); setInterval(activity, 2000); setInterval(actualConcerns, 5000);
+render(); void loadOutboundProof(); void activity(); void actualConcerns(); void loadOutbound(); setInterval(activity, 2000); setInterval(actualConcerns, 5000);
 try { const result = await fetch('/judge-simulation.json', { cache: 'no-store' }); if (!result.ok) throw new Error('Prepared scenario is not available yet.'); fixture = await result.json(); if (fixture.simulation !== true) throw new Error('Scenario must be explicitly marked as a simulation.'); reset(); document.getElementById('load-status').textContent = 'Prepared fictional scenario ready · no real owner consent'; document.getElementById('run-all').disabled = false; }
 catch (error) { document.getElementById('load-status').textContent = `${error.message} Navigation and actual source/activity checks remain available.`; }
 
@@ -246,3 +246,23 @@ document.getElementById('judge-watch-form').addEventListener('submit', async eve
 document.getElementById('judge-watch-refresh').addEventListener('click', () => { void loadJudgeWatch(); });
 void loadJudgeWatch();
 setInterval(() => { if (document.visibilityState !== 'hidden') void loadJudgeWatch(true); }, 15000);
+
+
+async function loadOutboundProof() {
+  const target = document.getElementById('outbound-proof-content');
+  const status = document.getElementById('outbound-proof-status');
+  try {
+    const proof = await api('/outbound-proof.json');
+    const verified = proof.test === true && proof.mode === 'recorded-real-outbound-test' && proof.status === 'completed' && proof.paired === true && proof.userConfirmedResponsive === true && Number(proof.userTurns) > 0 && Number(proof.assistantTurns) > 0;
+    if (!verified) throw new Error('The completed-test proof is not available.');
+    const source = proof.notificationSource || {};
+    const link = safeUrl(source.url);
+    const date = source.meetingDate ? new Date(source.meetingDate) : null;
+    const meeting = date && !Number.isNaN(date.getTime()) ? date.toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric', timeZone:'America/Los_Angeles' }) : 'Date not supplied';
+    status.textContent = 'Verified real outbound test';
+    target.innerHTML = `<div class="proof-stats"><div><strong>${esc(proof.durationSeconds)} s</strong><span>completed call</span></div><div><strong>${esc(proof.userTurns)} + ${esc(proof.assistantTurns)}</strong><span>owner + advocate turns</span></div><div><strong>English</strong><span>responsive & agenda-aware</span></div></div><ol class="proof-timeline"><li><b>1</b><div><strong>Agenda match · labeled TEST</strong><p>An existing public document was selected. This is not a newly published alert.</p></div></li><li><b>2</b><div><strong>Twilio placed the real outbound call</strong><p>The owner answered the notification call.</p></div></li><li><b>3</b><div><strong>Fresh code connected the intended workspace</strong><p>Phone keypad pairing completed before the private English discussion.</p></div></li><li><b>4</b><div><strong>Owner and advocate discussed the cited agenda</strong><p>${esc(proof.userTurns)} owner turns and ${esc(proof.assistantTurns)} advocate turns. The user confirmed the call was responsive and agenda-aware.</p></div></li><li><b>5</b><div><strong>Completed in ${esc(proof.durationSeconds)} seconds</strong><p>No brief review or send happened in this test. Earlier inbound authorization separately delivered two verified Relay receipts.</p></div></li></ol><details class="proof-source"><summary>Inspect the exact source · ${esc(meeting)} · Item ${esc(source.item || '—')} · PDF page ${esc(source.page || '—')}</summary><p>${esc(source.title || 'Published government document')}</p>${link ? `<a href="${esc(link)}" target="_blank" rel="noopener noreferrer">Open the cited government source ↗</a>` : '<p>Source link unavailable.</p>'}</details><p class="proof-boundary">Verified metadata, not a call recording or replay dial. This test verifies an English conversation; multilingual quality and real-business outcomes are not established.</p>`;
+  } catch {
+    status.textContent = 'Completed-test proof unavailable';
+    target.innerHTML = '<p class="small">The real completed-test evidence could not be loaded. The fictional walkthrough below remains explicitly simulated.</p>';
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "test": true,
+  "mode": "recorded-real-outbound-test",
+  "status": "completed",
+  "durationSeconds": 84,
+  "language": "en",
+  "paired": true,
+  "userTurns": 2,
+  "assistantTurns": 2,
+  "notificationSource": {
+    "title": "ISCOTT Meeting 1626 minutes · Item C",
+    "meetingDate": "2026-10-22T09:00:00-07:00",
+    "url": "https://www.sfmta.com/media/50353/download?inline#page=3",
+    "item": "C",
+    "page": 3
+  },
+  "userConfirmedResponsive": true,
+  "sharing": "not-exercised-in-this-call",
+  "api": "Twilio outbound + OpenAI Live"
+}
