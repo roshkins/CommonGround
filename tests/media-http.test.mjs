@@ -1,8 +1,13 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { existsSync } from 'node:fs';
 import { createApp } from '../server.mjs';
 
-test('judge video supports seeking and rejects malformed ranges without exposing other files', async () => {
+const privateExportAvailable = ['demo-final.mp4', 'demo-final.vtt'].every(name => existsSync(new URL(`../public/${name}`, import.meta.url)));
+
+test('judge video supports seeking and rejects malformed ranges without exposing other files', {
+  skip: privateExportAvailable ? false : 'Generated user-voice demo export and captions are intentionally excluded from public source; run this integration check where both private export assets exist.',
+}, async () => {
   const { server } = createApp({ dbPath: ':memory:', config: () => ({ openaiKey: '', model: 'test' }) });
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const base = `http://127.0.0.1:${server.address().port}`;

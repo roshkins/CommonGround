@@ -116,3 +116,5 @@ Public source: [roshkins/CommonGround](https://github.com/roshkins/CommonGround)
 ## Public source snapshot
 
 This repository intentionally excludes local credentials, runtime data, private diagnostics, user recordings/transcripts, and the hosted demo video/captions. Local production artifact links in development notes are not included in this source snapshot. View the deployed application and optional recorded demonstration through the [one-page judge guide](https://commonground-ac9dc2.style.dev/judge.html). No new license is asserted by this publication.
+
+The isolated test suite runs without credentials or paid provider calls. In a public clone, one video HTTP integration test explicitly skips because the generated user-voice MP4 and captions are omitted for privacy; the same test runs when both private export assets are present. Production video seeking/range delivery is verified separately against the hosted artifact.
