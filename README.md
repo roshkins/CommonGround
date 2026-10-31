@@ -39,7 +39,7 @@ The deployed [one-page judge guide](https://commonground-ac9dc2.style.dev/judge.
 
 The real 334-second English inbound and 148-second shared calls verified exact brief revision/authorization and board visibility. Current actual-call private V3/shared V1 proposals remain pending human review. Earlier isolated hosted proof separately verifies approval/reset behavior. The old 181-second maximum-duration result belongs to an earlier three-minute cap; current phone cap is eight minutes.
 
-Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. The correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is deployed at 3:41 p.m. and awaits actual reply-quality verification; the complete outbound conversation is not accepted as working.
+The final real English outbound retest completed in 84 seconds. The user confirmed it responded and discussed the correct agenda. Saved evidence contains two user and two assistant turns, 3,556 received/input-forward attempts, 217 nonquiet frames, 15 user transcript deltas and zero errors. Carrier delivery, fresh pairing, source awareness and the reply path are now verified for this English test. No brief review or send happened in this retest: deterministic spoken receipt confirmation remains implementation/38-test evidence only. Earlier real inbound key-1 authorization separately delivered two verified Relay receipts.
 
 Automatic matching-agenda calls are capped at one per day. Manual labeled tests allow at most three per hour, only after the prior test is terminal and the user gives a fresh explicit confirmation. Active or unknown calls are not retried automatically. Existing-document tests remain labeled TEST; they are not new publications.
 
@@ -98,9 +98,9 @@ The test suites use isolated storage, stubbed model/phone providers, and local H
 node tests/relay.integration.mjs
 ```
 
-Hosted validation is separate from isolated tests. Actual model/Relay, vector retrieval, actor restart, inbound brief authorization and outbound ringing/pairing are verified. The latest 106-second outbound retest heard the correct specific source greeting but captured zero caller transcript. A reply-path correction has 38 isolated passes, was deployed at 3:41 p.m., and awaits actual reply-quality verification. Browser push and final updated-video/upload checks remain open.
+Hosted validation is separate from isolated tests. Actual model/Relay, vector retrieval, actor restart, inbound brief authorization and outbound ringing/pairing are verified. The final 84-second English outbound test was responsive and agenda-aware, confirmed by the user, with two user/two assistant turns and zero errors. No brief review/send happened in that retest; deterministic spoken receipt remains implementation/test evidence. Browser push and final updated-video/upload checks remain open.
 
-Pitch and demo scripts are maintained in [docs/pitch.md](docs/pitch.md) and [docs/demo-video.md](docs/demo-video.md): **60-second pitch + two-minute video**. The native body is recorded/technically validated; the updated 117.77-second cut has passed media decode/visual QA; hosted replacement verification remains pending. Public hosting and manual unlisted upload are already authorized; the user provides the watch link and controls event submission.
+Pitch and demo scripts are maintained in [docs/pitch.md](docs/pitch.md) and [docs/demo-video.md](docs/demo-video.md): **60-second pitch + two-minute video**. The native body is recorded/technically validated; the updated 117.77-second cut has passed media decode/visual QA; hosted replacement verification passed (MP4 range 206 / 7,222,801 bytes; VTT 200). Public hosting and manual unlisted upload are already authorized; the user provides the watch link and controls event submission.
 
 ## Sources
 
@@ -113,8 +113,8 @@ Public source: [roshkins/CommonGround](https://github.com/roshkins/CommonGround)
 
 [Hosted demonstration video](https://commonground-ac9dc2.style.dev/demo-final.mp4) (117.766667 seconds; user-authorized public hosting). Video, user audio and captions are intentionally excluded from GitHub.
 
+The isolated test suite runs without credentials or paid provider calls. In a public clone, one video HTTP integration test explicitly skips because the generated user-voice MP4 and captions are omitted for privacy; the same test runs when both private export assets are present. Production video seeking/range delivery is verified separately against the hosted artifact.
+
 ## Public source snapshot
 
 This repository intentionally excludes local credentials, runtime data, private diagnostics, user recordings/transcripts, and the hosted demo video/captions. Local production artifact links in development notes are not included in this source snapshot. View the deployed application and optional recorded demonstration through the [one-page judge guide](https://commonground-ac9dc2.style.dev/judge.html). No new license is asserted by this publication.
-
-The isolated test suite runs without credentials or paid provider calls. In a public clone, one video HTTP integration test explicitly skips because the generated user-voice MP4 and captions are omitted for privacy; the same test runs when both private export assets are present. Production video seeking/range delivery is verified separately against the hosted artifact.

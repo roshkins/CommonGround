@@ -1,6 +1,6 @@
 # CommonGround submission checklist
 
-Updated October 31, 2026, 3:41 p.m. Pacific. The 3 p.m. ready target has passed following late critical requests. The reported submission deadline is **4 p.m. Pacific**. Upload and final submission remain pending.
+Updated October 31, 2026, 3:46 p.m. Pacific. The 3 p.m. ready target has passed following late critical requests. The reported submission deadline is **4 p.m. Pacific**. Upload and final submission remain pending.
 
 ## Links and files
 
@@ -36,14 +36,15 @@ Working stack: OpenAI **`gpt-live-1`** and **`gpt-6.1-terra`**, **Twilio Agent C
 Real 334-second English and 148-second shared calls verified exact brief authorization and concern-list visibility. Actual private **V3** and shared **V1** proposals remain **pending human approval**. Earlier isolated hosted proof separately verifies approval/reset behavior.
 
 - [x] User-triggered outbound ringing/fresh English pairing verified (171 seconds, shared workspace).
-- [ ] Outbound conversation: later 106-second retest heard the correct specific TEST/source greeting but captured zero caller transcript. Reply-path correction has 38 isolated passes and is deployed at 3:41 p.m.; actual reply-quality verification remains pending. No full conversation success claim.
-- [ ] Turn-taking quality: caller reported interruptions/being bulldozed; 2:37:45 fix has 15 isolated test passes, caller reassessment pending.
+- [x] Real English outbound conversation: final 84-second test was responsive and agenda-aware, confirmed by the user; two user/two assistant turns, zero errors.
+- [ ] Spoken receipt in the latest outbound test: not exercised because that call had no brief review/send. Implementation/38 tests cover it; earlier real inbound authorization separately delivered two Relay receipts.
+- [x] Latest English reply quality: the user confirmed responsive agenda discussion in the final 84-second test. Earlier turn-taking criticism remains historical; no broad language or merchant-outcome claim follows.
 - [ ] Browser-push delivery: unverified. No arbitrary-language quality, real-business consensus or million-user load-test claim.
 
 The specific user-authorized OpenAI recording transcription succeeded after a PCM-format retry (686 words, 43 timestamped segments); the recording was not copied to the VM. Keep the private/shared audience boundaries and truthful editing/AI-narration disclosures in the final video.
 
-Outbound carrier delivery and fresh English-code pairing were verified in a 171-second test. A later 106-second user retest heard the correct specific TEST/source greeting and question, but captured zero caller transcript: the reply path failed. The correction removes the long source announcement before the microphone connects and adds aggregate audio diagnostics; 38 isolated checks pass. That correction is deployed at 3:41 p.m. and awaits actual reply-quality verification; the complete outbound conversation is not accepted as working.
+The final real English outbound retest completed in 84 seconds. The user confirmed it responded and discussed the correct agenda. Saved evidence contains two user and two assistant turns, 3,556 received/input-forward attempts, 217 nonquiet frames, 15 user transcript deltas and zero errors. Carrier delivery, fresh pairing, source awareness and the reply path are now verified for this English test. No brief review or send happened in this retest: deterministic spoken receipt confirmation remains implementation/38-test evidence only. Earlier real inbound key-1 authorization separately delivered two verified Relay receipts.
 
-Historical validated native-body delivery: 6,213,842 bytes; SHA-256 `d305dd3534b746fd15fdc3d59629271272f102e8698501b735a50469fde9a646`. Hosted MP4 HTTP 200/range 206 and 31 VTT cues passed. VTT stays optional because captions are burned in. The selected replacement has now passed media QA at 117.766667 seconds; its separate hosted verification remains pending.
+Historical validated native-body delivery: 6,213,842 bytes; SHA-256 `d305dd3534b746fd15fdc3d59629271272f102e8698501b735a50469fde9a646`. Hosted MP4 HTTP 200/range 206 and 31 VTT cues passed. VTT stays optional because captions are burned in. The selected replacement has now passed media QA at 117.766667 seconds; its hosted MP4 range 206 / 7,222,801-byte verification and VTT 200 also passed.
 
 Automatic matching-agenda calls are capped at one per day. Manual labeled tests allow at most three per hour, only after the prior test is terminal and the user gives a fresh explicit confirmation. Active or unknown calls are not retried automatically. Existing-document tests remain labeled TEST; they are not new publications.

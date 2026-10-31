@@ -14,3 +14,8 @@ public/demo-final.mp4
 public/demo-final.vtt
 *.wav
 *.webm
+
+# Private production and media outputs
+*.m4a
+.codex/
+.agents/
